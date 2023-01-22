@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #eff4fd;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background: rgb(255, 183, 0);
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background: rgb(255, 183, 0);
+}
+
+.detel{
+    margin-left: 140px;
+    margin-top: 14%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgb(255, 160, 0);
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.detel a{
+    background: #000;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #eff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .person{
+    left: 45%;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.content .left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    position: relative;
+}
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:  rgb(255, 119, 0);
+}
+
+.content .left-side .details{
+    margin: 48px;
+    text-align: center;
+}
+
+.content .left-side .details i{
+    font-size: 35px;
+    color: rgb(255, 119, 0);
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one a,
+.content .left-side .details .text-two a{
+    text-decoration: none;
+    font-size: 17px;
+    color: blue;
+}
+
+.content .right-side{
+    width: 75%;
+    margin-left: 75px;
+    margin-top: 130px;
+}
+
+.content .right-side .topic-text{
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(255, 119, 0);
+}
+
+.right-side .input-box{
+    height: 60px;
+    width: 75%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: #f0f1f8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box{
+    min-height: 110px;
+}
+
+.right-side .input-box textarea{
+    padding-top: 6px;
+}
+
+.button{
+    display: inline-block;
+    margin-top: 32px;
+}
+
+.button input[type="submit"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: rgb(255, 119, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="submit"]:hover{
+    background: green;
+}
